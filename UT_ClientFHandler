@@ -1,0 +1,145 @@
+-- this will handle User input, and send it all to the server to carry out functions.
+
+-- Hey, MAKE SURE THIS IS A CHILD OF THE UT_DevServer Script, and is named UT_ClientFHandler.  <<<<----------------------------------------------------------------------------------------------------------------------------!!!!!!!!!!----------------------
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local UTGE = ReplicatedStorage:WaitForChild("UTG")
+local UTGE2 = ReplicatedStorage:WaitForChild("UTG2")
+
+local UserInputService = game:GetService("UserInputService")
+	
+
+-------------------------------------------------
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end -- ensure ts is typed on purpose
+
+	if input.KeyCode == Enum.KeyCode.LeftShift then
+			local key = "Enum.KeyCode.Zero"
+			UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputEnded:Connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end -- ensure ts is typed on purpose
+
+	if input.KeyCode == Enum.KeyCode.LeftShift then
+		local key = "Enum.KeyCode.Zero_UP"
+		UTGE:FireServer(key)
+	end 
+end)
+-------------------------------------------------
+
+-------------------------------------------------
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end -- ensure ts is typed on purpose
+
+	if input.KeyCode == Enum.KeyCode.LeftControl then
+		local key = "Enum.KeyCode.Two"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputEnded:Connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end -- ensure ts is typed on purpose
+
+	if input.KeyCode == Enum.KeyCode.LeftControl then
+		local key = "Enum.KeyCode.Two_UP"
+		UTGE:FireServer(key)
+	end 
+end)
+-------------------------------------------------
+
+-------------------------------------------------
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+	
+	if input.KeyCode == Enum.KeyCode.B then
+		local key = "b"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+	
+	if input.KeyCode == Enum.KeyCode.B then
+		local key = "b"
+		UTGE:FireServer(key)
+	end 
+end)
+-------------------------------------------------
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent) -- left
+	if gameProcessedEvent then return end
+	
+	if input.KeyCode == Enum.KeyCode.Q then
+		local key = "q"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent) -- right
+	if gameProcessedEvent then return end
+
+	if input.KeyCode == Enum.KeyCode.E then
+		local key = "e"
+		UTGE:FireServer(key)
+	end 
+end)
+
+-------------------------------------------------
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+
+	if input.KeyCode == Enum.KeyCode.C then
+		local key = "c"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+
+	if input.KeyCode == Enum.KeyCode.C then
+		local key = "c"
+		UTGE:FireServer(key)
+	end 
+end)
+-------------------------------------------------
+
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end -- ensure ts is typed on purpose
+
+	if input.KeyCode == Enum.KeyCode.Space then
+		local key = "Enum.KeyCode.Space"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+	
+	if input.KeyCode == Enum.KeyCode.M then
+		local key = "m"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+	
+	if input.KeyCode == Enum.KeyCode.N then
+		local key = "n"
+		UTGE:FireServer(key)
+	end 
+end)
+
+UserInputService.InputBegan:connect(function(input, gameProcessedEvent)
+	if gameProcessedEvent then return end
+	
+	if input.KeyCode == Enum.KeyCode.C then
+		local key = "c"
+		UTGE:FireServer(key)
+	end 
+end)
+
