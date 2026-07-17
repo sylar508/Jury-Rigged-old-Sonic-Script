@@ -4,6 +4,7 @@
      Oh yeah, you will also need a LocalScript that is a child to the UT_DevServer script which handles the user inputs. Name the LocalScript "UT_ClientFHandler" or whatever you want,
      just make sure to update the script with the new name, because if u dont it wont do what it's supposed to do.
 
+----->SHIT, I just remembered it wont be able to find what player you even want. SO you will either need to add your own player as a variable, or just incorporate this into a button that is fired on the client. Simple if you even know what you're doing.
 
      I originally made this script to hook up to the Ultimate Trolling GUI that I'm trying to revive, so the first two-three lines above the credit comment that are commented out were the direct link to that menu. you can delete them.    ]]
 
